@@ -1,0 +1,39 @@
+canvas->scale(0.5f, 0.5f);
+
+canvas->save();
+canvas->concat(GMatrix(9.15385f,0,0,0,8.40206f,0));
+
+GPathBuilder bu;
+
+paint.setColor({0.486275f,0.305882f,0.196078f,1});
+bu.moveTo(14,85);bu.lineTo(17,94);bu.lineTo(89,94);bu.cubicTo(89,94, 94,85, 93,84);bu.cubicTo(91,82, 14,84, 14,85);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0.890196f,0,0,1});
+bu.moveTo(19,47);bu.cubicTo(19,47, 10,54, 6,61);bu.cubicTo(1,67, 9,68, 9,68);bu.lineTo(10,82);bu.cubicTo(10,82, 20,90, 33,90);bu.cubicTo(47,90, 59,91, 61,90);bu.cubicTo(63,89, 70,88, 70,86);bu.cubicTo(71,85, 97,87, 97,77);bu.cubicTo(97,67, 104,57, 86,48);bu.cubicTo(69,39, 19,47, 19,47);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({1,0.882353f,0.768627f,1});
+bu.moveTo(17,32);bu.cubicTo(14,80, 97,75, 88,29);bu.lineTo(53,14);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0.556863f,0.847059f,0.972549f,1});
+bu.moveTo(17,32);bu.cubicTo(26,-4, 78,0, 88,29);bu.cubicTo(68,20, 48,20, 17,32);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({1,1,1,1});
+bu.moveTo(54,35);bu.quadTo(54.026199f,29.610901f, 58.298199f,27.842300f);bu.quadTo(62.570099f,26.073700f, 66.829002f,29.688900f);bu.quadTo(71.087799f,33.304001f, 71.087898f,38.698799f);bu.quadTo(71.087898f,44.093601f, 66.829102f,45.889900f);bu.quadTo(62.570301f,47.686199f, 58.298302f,44.093300f);bu.quadTo(54.026299f, 40.500301f, 54, 35.099998f);bu.lineTo(54,35);bu.moveTo(37,38);bu.quadTo(37.026199f,32.599701f, 41.298100f,29.006599f);bu.quadTo(45.570000f,25.413500f, 49.828899f,27.209700f);bu.quadTo(54.087799f,29.005800f, 54.087898f,34.400600f);bu.quadTo(54.088001f,39.795300f, 49.829201f,43.410599f);bu.quadTo(45.570499f,47.025799f, 41.298401f,45.257500f);bu.quadTo(37.026402f,43.489101f, 37,38.099998f);bu.lineTo(37,38);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({1,0.949020f,0,1});
+bu.moveTo(41,6);bu.cubicTo(42,5, 45,3, 49,3);bu.cubicTo(52,3, 58,2, 63,6);bu.lineTo(62,8);bu.lineTo(60,8);bu.lineTo(58,8);bu.cubicTo(58,8, 55,9, 53,8);bu.cubicTo(51,7, 52,7, 52,7);bu.lineTo(49,8);bu.lineTo(47,7);bu.lineTo(46,7);bu.cubicTo(46,7, 45,9, 43,9);bu.cubicTo(43,9, 41,8, 41,6);bu.moveTo(17,34);bu.lineTo(17,32);bu.cubicTo(17,32, 52,12, 88,29);bu.lineTo(88,31);bu.cubicTo(88,31, 53,14, 17,34);bu.moveTo(5,62);bu.cubicTo(8,60, 10,60, 13,62);bu.cubicTo(16,64, 26,68, 21,73);bu.cubicTo(19,75, 15,73, 13,73);bu.cubicTo(12,74, 9,75, 7,74);bu.cubicTo(3,71, 1,66, 5,62);bu.moveTo(99,59);bu.cubicTo(99,59, 90,57, 88,63);bu.lineTo(85,68);bu.cubicTo(85,69, 83,71, 88,71);bu.cubicTo(93,71, 93,73, 95,73);bu.cubicTo(98,73, 102,72, 102,69);bu.cubicTo(102,65, 101,58, 99,59);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0,0,0,1});
+bu.moveTo(56,78);bu.lineTo(56,79);bu.moveTo(55,69);bu.lineTo(55,70);bu.moveTo(55,87);bu.lineTo(55,88);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0,0,0,1});
+bu.moveTo(56.500000f,78);bu.lineTo(56.500000f,79);bu.quadTo(56.500000f,79.207100f, 56.353600f,79.353600f);bu.quadTo(56.207100f,79.500000f, 56,79.500000f);bu.quadTo(55.792900f,79.500000f, 55.646400f,79.353600f);bu.quadTo(55.500000f,79.207100f, 55.500000f,79);bu.lineTo(55.500000f,78);bu.quadTo(55.500000f,77.792900f, 55.646400f,77.646400f);bu.quadTo(55.792900f,77.500000f, 56,77.500000f);bu.quadTo(56.207100f,77.500000f, 56.353600f,77.646400f);bu.quadTo(56.500000f,77.792900f, 56.500000f,78);bu.moveTo(55.500000f,69);bu.lineTo(55.500000f,70);bu.quadTo(55.500000f,70.207100f, 55.353600f,70.353500f);bu.quadTo(55.207100f,70.500000f, 55,70.500000f);bu.quadTo(54.792900f,70.500000f, 54.646400f,70.353500f);bu.quadTo(54.500000f,70.207100f, 54.500000f,70);bu.lineTo(54.500000f,69);bu.quadTo(54.500000f,68.792900f, 54.646400f,68.646400f);bu.quadTo(54.792900f,68.500000f, 55,68.500000f);bu.quadTo(55.207100f,68.500000f, 55.353600f,68.646400f);bu.quadTo(55.500000f,68.792900f, 55.500000f,69);bu.moveTo(55.500000f,87);bu.lineTo(55.500000f,88);bu.quadTo(55.500000f,88.207100f, 55.353600f,88.353500f);bu.quadTo(55.207100f,88.500000f, 55,88.500000f);bu.quadTo(54.792900f,88.500000f, 54.646400f,88.353500f);bu.quadTo(54.500000f,88.207100f, 54.500000f,88);bu.lineTo(54.500000f,87);bu.quadTo(54.500000f,86.792900f, 54.646400f,86.646400f);bu.quadTo(54.792900f,86.500000f, 55,86.500000f);bu.quadTo(55.207100f,86.500000f, 55.353600f,86.646400f);bu.quadTo(55.500000f,86.792900f, 55.500000f,87);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0,0,0,1});
+bu.moveTo(60,36);bu.quadTo(59.971699f,36.565601f, 59.472099f,36.832199f);bu.quadTo(58.972500f,37.098900f, 58.486900f,36.807598f);bu.quadTo(58.001202f,36.516300f, 58.001202f,35.950001f);bu.quadTo(58.001202f,35.383701f, 58.486900f,35.092400f);bu.quadTo(58.972500f,34.801201f, 59.472099f,35.067799f);bu.quadTo(59.971699f,35.334400f, 60,35.900002f);bu.moveTo(49,36);bu.quadTo(48.971699f,36.565601f, 48.472099f,36.832199f);bu.quadTo(47.972500f,37.098900f, 47.486900f,36.807598f);bu.quadTo(47.001202f,36.516300f, 47.001202f,35.950001f);bu.quadTo(47.001202f,35.383701f, 47.486900f,35.092400f);bu.quadTo(47.972500f,34.801201f, 48.472099f,35.067799f);bu.quadTo(48.971699f,35.334400f, 49,35.900002f);bu.moveTo(57,55);bu.quadTo(56.980900f,56.720699f, 55.980999f,57.564602f);bu.quadTo(54.981098f,58.408401f, 53.990700f,57.539700f);bu.quadTo(53.000301f,56.671001f, 53.000301f,54.950001f);bu.quadTo(53.000301f,53.229000f, 53.990700f,52.360298f);bu.quadTo(54.981098f,51.491600f, 55.980999f,52.335400f);bu.quadTo(56.980900f,53.179298f, 57,54.900002f);bu.moveTo(12,94);bu.cubicTo(12,94, 32,90, 54,94);bu.cubicTo(54,94, 81,90, 93,94);bu.lineTo(12,94);
+canvas->drawPath(*bu.detach(), paint);
+paint.setColor({0,0,0,1});
+bu.moveTo(50.150002f,58.799999f);bu.quadTo(51.105999f,59.516998f, 52.802399f,59.880600f);bu.quadTo(56.216599f,60.612202f, 59.888199f,58.776402f);bu.lineTo(60.111801f,59.223598f);bu.quadTo(56.283401f,61.137798f, 52.697601f,60.369400f);bu.quadTo(50.893902f,59.982899f, 49.849998f,59.200001f);bu.lineTo(50.150002f,58.799999f);bu.moveTo(56.246601f,65.958900f);bu.lineTo(58.253399f,78);bu.lineTo(56.246601f,90.041100f);bu.lineTo(55.753399f,89.958900f);bu.lineTo(57.753399f,77.958900f);bu.lineTo(58,78);bu.lineTo(57.753399f,78.041100f);bu.lineTo(55.753399f,66.041100f);bu.lineTo(56.246601f,65.958900f);bu.moveTo(25.192101f,49.840000f);bu.quadTo(27.672300f,52.816200f, 31.771999f,55.797798f);bu.quadTo(39.956402f,61.750000f, 48,61.750000f);bu.quadTo(60.460201f,61.750000f, 66.172501f,59.887299f);bu.quadTo(75.460403f,56.858601f, 82.798401f,46.852200f);bu.lineTo(83.201599f,47.147800f);bu.quadTo(75.768303f,57.284199f, 66.327499f,60.362701f);bu.quadTo(60.539600f,62.250000f, 48,62.250000f);bu.quadTo(39.793800f,62.250000f, 31.478001f,56.202202f);bu.quadTo(27.327900f,53.183998f, 24.807899f,50.160000f);bu.lineTo(25.192101f,49.840000f);
+canvas->drawPath(*bu.detach(), paint);
+
+canvas->restore();
