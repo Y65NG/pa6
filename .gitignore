@@ -1,0 +1,14 @@
+.idea/
+.xmake/
+tmp/
+tests.dSYM/
+bench.dSYM/
+image.dSYM/
+*.png
+bench
+dbench
+image
+tests
+.vscode/launch.json
+diff/index.html
+dbench.dSYM/
