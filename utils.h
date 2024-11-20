@@ -294,7 +294,7 @@ inline std::shared_ptr<GShader> GCreateProxyShader(GShader* realShader, GMatrix 
 
 class MyCombineTrigShader : public GShader {
 public:
-    MyCombineTrigShader(GShader* trigGradientShader, GShader* proxyShader)
+    MyCombineTrigShader(std::shared_ptr<GShader> trigGradientShader, std::shared_ptr<GShader> proxyShader)
         : trigGradientShader(trigGradientShader), proxyShader(proxyShader) {}
 
     bool isOpaque() override { return trigGradientShader->isOpaque() && proxyShader->isOpaque(); }
@@ -319,12 +319,12 @@ public:
     }
 
 private:
-    GShader* trigGradientShader;
-    GShader* proxyShader;
+    std::shared_ptr<GShader> trigGradientShader;
+    std::shared_ptr<GShader> proxyShader;
 };
 
-inline std::shared_ptr<GShader> GCreateCombineTrigShader(GShader* trigGradientShader,
-                                                         GShader* proxyShader) {
+inline std::shared_ptr<GShader> GCreateCombineTrigShader(std::shared_ptr<GShader> trigGradientShader,
+                                                         std::shared_ptr<GShader> proxyShader) {
 
     return std::make_unique<MyCombineTrigShader>(
         MyCombineTrigShader(trigGradientShader, proxyShader));

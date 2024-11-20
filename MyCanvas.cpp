@@ -299,9 +299,9 @@ void MyCanvas::drawMesh(const GPoint verts[], const GColor colors[], const GPoin
             auto P = GMatrix(P1 - P0, P2 - P0, P0);
             auto T = GMatrix(T1 - T0, T2 - T0, T0);
 
-            auto trigGradientShader = MyTrigGradientShader(P0, P1, P2, C0, C1, C2);
-            auto proxyShader = MyProxyShader(paint.peekShader(), P * T.invert().value());
-            p.setShader(GCreateCombineTrigShader(&trigGradientShader, &proxyShader));
+            // auto trigGradientShader = MyTrigGradientShader(P0, P1, P2, C0, C1, C2);
+            // auto proxyShader = MyProxyShader(paint.peekShader(), P * T.invert().value());
+            p.setShader(GCreateCombineTrigShader(GCreateTrigGradient(P0, P1, P2, C0, C1, C2), GCreateProxyShader(paint.peekShader(), P * T.invert().value())));
         }
 
         drawConvexPolygon(points.data(), 3, p);
