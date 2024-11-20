@@ -9,7 +9,7 @@
 #include "include/GPoint.h"
 #include "include/GShader.h"
 #include <algorithm>
-#include <functional>
+// #include <functional>
 #include <iostream>
 #include <memory>
 #include <vector>
